@@ -12,10 +12,12 @@ while True:
       print("your coin is", player_coin)
 
       if player_coin >= 100:
+         print("==================result===================")
          print("player win!")
          break
 
       elif player_coin <= 0:
+         print("==================result===================")
          print("player lose :(")
          break
 
