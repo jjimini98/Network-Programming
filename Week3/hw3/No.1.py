@@ -19,7 +19,7 @@ print(sorted(list(days.keys())))
 #3. 일수가 31일 월을 모두 출력하라.
 print("3번 : 일수가 31일인 모든 월을 출력합니다.")
 for x in days.items(): #x값에는 튜플이 들어감 ex. ('January' ,31)
-   if x[1] == 31:
+    if x[1] == 31:
        print(x[0])
 
 #4. 월의 일수를 기준으로 오름차 순으로 key-value 쌍을 출력하라.
