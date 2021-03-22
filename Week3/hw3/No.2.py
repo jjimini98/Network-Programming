@@ -19,10 +19,18 @@ for x in d:
 #3. 사용자의 이름을 입력하면 전화번호, 이메일을 출력하라. 이름이 없으면 '이름이 없습니다'를 출력하라.
 print("3번 : 사용자의 이름을 입력하면 전화번호와 이메일을 출력합니다.")
 user = input(">>") #이름을 입력받음
-for x in d:
-    if user == x['name']:
-        print(x['phone'], x['email'])
 
-    if user != x['name']:
-        print("이름이 없습니다")
-# 3번 아직 미완료
+a= d[0]
+b = d[1]
+c = d[2]
+e =d[3]
+if user == a['name']:
+    print(a['phone'],a['email'])
+elif user == b['name']:
+    print(b['phone'],b['email'])
+elif user == c['name']:
+    print(c['phone'],c['email'])
+elif user == e['name']:
+    print(e['phone'],e['email'])
+else :
+    print("이름이 없습니다")
