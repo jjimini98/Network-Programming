@@ -26,12 +26,7 @@ class Employee(Person):
     def getID(self,employID):
         print(self.employID)
 
-
 #객체생성
 em = Employee("IoT",65,2018)
 print(em.name, em.age, em.employID)
 
-
-em.getName("IoT")
-em.getAge(65)
-em.getID(2018)
