@@ -7,7 +7,7 @@ s.bind(('', 9000))  #ip와 port번호는 튜플 형태로 input
 
 s.listen(2) # 서버에 동시에 접속할 수 있는 클라이언트 개수 ( 여기선 작게 2개 )
 
-while True:
+while True: #위의 s는 연결을 위한 소켓 while 문 안에서는 client라는 소켓으로 접속
 	client, addr = s.accept() # client 변수에 클라이언트와 접속할 수 있는 socket생성
 	#accept()도 블로킹 후 기다리는 함수
 	print("Connection From" , addr)
