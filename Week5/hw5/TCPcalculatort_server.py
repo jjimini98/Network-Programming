@@ -13,7 +13,7 @@ def calculator(sentence):
       return int(sentence[0]) * int(sentence[2])
 
    elif sentence[1] == "/":
-      return format(int(sentence[0]) / int(sentence[2]), ".1f")
+      return '%0.1f' %float(float(sentence[0])/float(sentence[2]))
    
 
 
@@ -35,9 +35,9 @@ while True:
       except: 
          client.send(b"Try Again")
       
-      else : 
-         en = (result).to_bytes(4,'big')
-         client.send(en)
+      else :
+            en = str(result).encode()
+            client.send(en)
 
    client.close()
 

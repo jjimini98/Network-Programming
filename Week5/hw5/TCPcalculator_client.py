@@ -15,6 +15,6 @@ while True:
 
    #서버에서 계산된 값을 받기
    result = s.recv(1025)
-   print("Received message : ", int.from_bytes(result,'big'))
+   print("Received message : ", result.decode())
 
 s.close()

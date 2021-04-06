@@ -1,21 +1,29 @@
 from socket import *
+import struct
+
+# def calculator(sentence):
+#     sentence= sentence.split(" ")
+#
+#     if sentence[1] == "+":
+#         return int(sentence[0]) + int(sentence[2])
+#
+#     elif sentence[1] == "-":
+#         return int(sentence[0]) - int(sentence[2])
+#
+#     elif sentence[1] == "*":
+#         return int(sentence[0]) * int(sentence[2])
+#
+#     elif sentence[1] == "/":
+#         return  format(int(sentence[0]) / int(sentence[2]), ".1f")
+#
+#
+# print(calculator("25 / 25"))
+# print(calculator("27 / 2 "))
 
 
-def calculator(sentence):
-    sentence= sentence.split(" ")
+result = 3 + 5
+packed_float = struct.pack('f', result)
+print(packed_float)
 
-    if sentence[1] == "+":
-        return int(sentence[0]) + int(sentence[2])
-
-    elif sentence[1] == "-":
-        return int(sentence[0]) - int(sentence[2])
-
-    elif sentence[1] == "*":
-        return int(sentence[0]) * int(sentence[2])
-
-    elif sentence[1] == "/":
-        return  format(int(sentence[0]) / int(sentence[2]), ".1f")
-
-
-print(calculator("25 / 25"))
-print(calculator("27 / 2 "))
+unpack = struct.unpack('f',packed_float)
+print(unpack)
