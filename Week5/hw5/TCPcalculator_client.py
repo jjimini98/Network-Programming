@@ -14,6 +14,7 @@ while True:
    s.send(user_input.encode())
 
    #서버에서 계산된 값을 받기
-   print("Received message : ", s.recv(1024).decode())
+   result = s.recv(1025)
+   print("Received message : ", int.from_bytes(result,'big'))
 
 s.close()
