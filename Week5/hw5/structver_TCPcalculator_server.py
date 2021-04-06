@@ -1,4 +1,6 @@
 from socket import * 
+import struct
+
 
 def calculator(sentence):
    sentence = sentence.split(" ") 
@@ -18,7 +20,7 @@ def calculator(sentence):
 
 
 s = socket(AF_INET , SOCK_STREAM)
-s.bind(('',3333))
+s.bind(('',3331))
 s.listen(5)
 
 print("waiting....")
@@ -35,9 +37,16 @@ while True:
       except: 
          client.send(b"Try Again")
       
-      else :
-            en = str(result).encode()
-            client.send(en)
+      else : 
+         if type(result) == int:
+            # en = (result).to_bytes(4,'big')
+            # client.send(en)
+            packed_int = struct.pack('i',result)
+            client.send(packed_int)
+
+         elif type(result) == float: 
+           packed_float = struct.pack('f', result)
+           client.send(packed_float)
 
    client.close()
 
