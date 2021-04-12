@@ -15,7 +15,7 @@ while True :
  
 
    try:
-      with open(myfile ,'rb') as file , open("C:\Users\jimin\vscode\network_programming\Week5\hw6\iot.png", "rb") as photo: # open file , r => read , b => byte format
+      with open(myfile ,'rb') as file , open("C:\\Users\\jimin\\vscode\\network_programming\\Week5\\hw6\\iot.png", "rb") as photo: # open file , r => read , b => byte format
          response = file.read()
          file.close()
  
@@ -28,8 +28,7 @@ while True :
       else:
             mimetype = 'text/html'
  
-      header += 'Content-Type: '+str(mimetype)+'\n\n'SSSSS
- 
+      header += 'Content-Type: '+str(mimetype)+'\n\n'
    except Exception as e:
         header = 'HTTP/1.1 404 Not Found\n\n'
         response = '<html><body><center><h3>Error 404: File not found</h3><p>Python HTTP Server</p></center></body></html>'.encode('utf-8')
