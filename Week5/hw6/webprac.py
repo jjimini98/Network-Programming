@@ -15,17 +15,20 @@ while True:
 
    if req == "/index.html" :
       # f = open("C:\\Users\\jimin\\vscode\\network_programming\\Week5\\hw6\\index.html", 'r', encoding= 'utf-8')
-      # mimeType = 'text/html'
-      # c.send("HTTP/1.1 200 OK \r\n".encode())
-      # c.send("Cotent-Type : ".encode()+ mimeType.encode() + '\r\n'.encode())
-      # c.send("\r\n".encode())
-      # data = f.read()
-      
+      mimeType = 'text/html'
+      c.send("HTTP/1.1 200 OK \r\n".encode())
+      c.send("Cotent-Type : ".encode()+ mimeType.encode() + '\r\n'.encode())
+      c.send("\r\n".encode())
 
-      # # 그냥 텍스트로 보내지말고 html 파일로 보내야함.
-
-      # c.send(data.encode())
-      
+      with open("C:\\Users\\jimin\\vscode\\network_programming\\Week5\\hw6\\index.html", 'rb') as f:
+         try:
+            data = f.read(1024) #1024바이트 읽는다
+            while data: #데이터가 없을 때까지
+            
+               data = f.read(1024) #1024바이트 읽음
+               c.send(data)
+         except Exception as ex:
+            print(ex)
 
       # 사진 보내기 
       
@@ -48,16 +51,3 @@ while True:
 
 
 
-
-
-   #  p = open("C:\\Users\\jimin\\vscode\\network_programming\\Week5\\hw6\\iot.png",'rb')
-   #    mimeType ='image/png'
-   #    c.send("HTTP/1.1 200 OK \r\n".encode())
-   #    c.send("Cotent-Type : ".encode()+ mimeType.encode() + '\r\n'.encode())
-   #    c.send("\r\n".encode())
-
-   #    picture = p.read(1024)
-   #    while (picture):
-   #       c.send(picture)
-   #       picture = p.read(1024)
-   #    p.close()
