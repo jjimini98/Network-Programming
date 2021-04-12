@@ -9,16 +9,16 @@ s = socket(AF_INET,SOCK_STREAM)
 s.bind(('',80))
 s.listen(5)
 
-print("Device is running")
+print("Device1 is running")
 
 BUF_SIZE = 1024   
 
-li = []
+st = ''
 for _ in range(5):
    temp = random.randint(0,40)
    hum = random.randint(0,100)
    light = random.randint(70,150)
-   li.append( "Temp="+str(temp) + ",Humid="+  str(hum)  + ",lilum=" + str(light) +" " )
+   st += "Temp="+str(temp) + ",Humid="+  str(hum)  + ",lilum=" + str(light) +" " 
 
 
 
@@ -31,11 +31,16 @@ while True:
       conn.close()
       continue 
    elif msg == "quit":
+      print('client : ', addr)
+      print("client : " , msg)
+      print("client : completed")
       conn.close()
       continue
    elif msg=="Request" :
-      print('client : ', addr , msg)
-      for x in li:
-         conn.send(x.encode())
+      print('client : ', addr)
+      print("client : ", msg)
+      print("client : completed")
+
+      conn.send(st.encode())
 
    conn.close()
