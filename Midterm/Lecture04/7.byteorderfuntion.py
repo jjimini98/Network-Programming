@@ -8,3 +8,4 @@ print(hex(b))
 
 c = socket.ntohs(b)
 print(hex(c))
+                        
