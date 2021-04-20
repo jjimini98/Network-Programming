@@ -4,13 +4,13 @@ Network Programming Lecture
 
 
 1. Midterm (21.04.21 Wed) 
----------------------------------------------------------------
-- [ ] Lecture 01 
-- [ ] Lecture 02
-- [ ] Lecture 03
-- [ ] Lecture 04
-- [ ] Lecture 05
-- [ ] Lecture 06
+
+- [X] Lecture 01 
+- [X] Lecture 02
+- [X] Lecture 03
+- [X] Lecture 04
+- [X] Lecture 05
+- [X] Lecture 06
 ---------------------------------------------------------------
 
 - [ ] Homework 4 : 학번/ 이름 전송하기 (✔️)
