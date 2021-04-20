@@ -11,7 +11,8 @@ Network Programming Lecture
 - [X] Lecture 04
 - [X] Lecture 05
 - [X] Lecture 06
----------------------------------------------------------------
+
+2. Homework code review
 
 - [ ] Homework 4 : 학번/ 이름 전송하기 (✔️)
 - [ ] Homework 5 : TCP 계산기
