@@ -14,8 +14,8 @@ while True:
         clien.send(sentence.encode())
         print("Result: ", clien.recv(1024).decode())
 
-    #여기다가 하면 에러
-    clien.close()
+
+clien.close()
 
 # 여기다가 close하면 무한루프 끝나지않음
 # clien.close()
