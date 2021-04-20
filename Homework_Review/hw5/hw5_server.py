@@ -4,6 +4,8 @@ server = socket(AF_INET, SOCK_STREAM)
 server.bind(('',9999))
 server.listen(5)
 print("waiting .... ")
+
+# 여기다가 accept하면 에러가 안남
 client, addr = server.accept()
 print("Connect from :", addr)
 
