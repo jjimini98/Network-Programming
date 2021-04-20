@@ -7,6 +7,8 @@ print("waiting .... ")
 
 while True:
     # 여기다가 accept하면 에러가남
+    # print("Result: ", clien.recv(1024).decode())
+    # ConnectionAbortedError: [WinError 10053] 현재 연결은 사용자의 호스트 시스템의 소프트웨어의 의해 중단되었습니다
     client , addr = server.accept()
     print("Connect from :" , addr)
 
