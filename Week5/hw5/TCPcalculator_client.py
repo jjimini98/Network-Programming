@@ -10,7 +10,7 @@ while True:
     if user_input == "q":
         break
 
-        # 서버로 계산식 전송
+    # 서버로 계산식 전송
     s.send(user_input.encode())
 
     # 서버에서 계산된 값을 받기)
