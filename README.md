@@ -15,7 +15,7 @@ Network Programming Lecture
 2. Homework code review
 
 - [ ] Homework 4 : 학번/ 이름 전송하기 (✔️)
-- [ ] Homework 5 : TCP 계산기
+- [ ] Homework 5 : TCP 계산기 (✔️)
 - [ ] Homework 6 : 웹 서버 
 - [ ] Homework 7 : IoT 디바이스에서 데이터 수집하기
 - [ ] Homework 8 : UDP message 송수신
