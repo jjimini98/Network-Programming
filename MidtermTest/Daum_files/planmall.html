@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)https://shop-redapi.daum.net/red-apigate/daumtop/v6/planmall -->
+<html lang="ko" class="os_windows"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>쇼핑하우</title>
+    <!--[if lt IE 9]>
+	<script src='//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js' type='text/javascript'></script>
+<![endif]-->    <style type="text/css">
+        body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button{margin:0;padding:0}
+        fieldset,img{border:0 none}
+        dl,ul,ol,menu,li{list-style:none}
+        blockquote, q{quotes: none}
+        blockquote:before, blockquote:after,q:before, q:after{content:'';content:none}
+        input,select,textarea,button{border-radius:0;vertical-align:middle}
+        input::-ms-clear{display:none}
+        button{border:0 none;background-color:transparent;cursor:pointer}
+        body,th,td,input,select,textarea,button{font-size:12px;line-height:1.5;font-family:AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif;color:#222;letter-spacing:-1px}
+        .os_mac body,.os_mac th,.os_mac td,.os_mac input,.os_mac select,.os_mac textarea,.os_mac button{letter-spacing:0}
+        a{color:#222;text-decoration:none}
+        a:hover{color:#118eff;text-decoration:underline}
+        a:active{background-color:transparent}
+        address,caption,cite,code,dfn,em,var{font-style:normal;font-weight:normal}
+
+        /* global */
+        .ir_wa{display:block;overflow:hidden;position:relative;z-index:-1;width:100%;height:100%}
+        .screen_out{overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px}
+
+        /* 공통 */
+        .img_shop{display:inline-block;overflow:hidden;font-size:15px;line-height:15px;background:url(//t1.daumcdn.net/daumtop_deco/images/top/2017/img_shop.png) no-repeat}
+        .ico_shopslot{display:block;background:url(//t1.daumcdn.net/daumtop_deco/images/top/2017/ico_shop.png) no-repeat}
+        .tit_shopslot{display:block;overflow:hidden;font-size:15px;line-height:16px;background:url(//t1.daumcdn.net/daumtop_deco/images/top/2017/tit_shop_200421.png) no-repeat;background-color:#fbfbfb;color:#1c1c1c}/* 2019-03-21 수정 */ /* 2020-02-19 수정 */ /* 2020-04-21 수정 */
+        .num_shopslot{display:block;overflow:hidden;font-size:0;line-height:0;background:url(//t1.daumcdn.net/daumtop_deco/images/top/2017/num_shop_191219.png) no-repeat;text-indent:-9999px} /* 2019-12-19 수정 */
+        .img_thumb{vertical-align:top}
+        .frame_g{position:absolute;top:0;left:0;border:1px solid #000;opacity:0.08;filter:alpha(opacity=8)}
+
+        /*** 쇼핑 서비스 슬롯 영역 ***/
+        .section_shopslot{position:relative;z-index:1;width:298px;margin-top:13px;border:1px solid #ececec}
+        .section_shopslot .info_head{overflow:hidden;position:relative;z-index:0;height:40px;padding:0 14px 0 15px;border-bottom:1px solid #ececec;background-color:#fbfbfb}
+        /* 2020-04-21 수정 시작 */
+        .section_shopslot .tit_shopslot{height:16px;margin:14px 0 10px;letter-spacing:-2px} /* 2020-04-16 수정 */
+        .section_shopslot .tit_event{background-position:0 -40px}
+        .section_shopslot .tit_theme{background-position:0 -80px}
+        .section_shopslot .tit_1boon{background-position:0 -240px}
+        .section_shopslot .tit_sale{background-position:0 -160px} /* 2020-02-19 추가 */
+        .section_shopslot .tit_hotdeal{background-position:0 -120px} /* 2020-04-16 수정 */
+        /* 2020-04-21 수정 끝 */
+
+        .paging_shop{overflow:hidden;position:absolute;top:10px;right:14px;z-index:0}
+        .paging_shop .info_page{float:left;margin:1px 5px 0 0;font-size:13px;line-height:16px;font-family:tahoma,arial,sans-serif;color:#888}
+        .os_mac .paging_shop .info_page{line-height:19px;font-family:helvetica,arial,sans-serif}
+        .paging_shop .num_index{float:left;color:#555}
+        .paging_shop .txt_slash{float:left;font-weight:normal;padding:0 1px}
+        .paging_shop .btn_page{display:inline;float:left;z-index:1;width:20px;height:20px;line-height:19px;background-color:transparent;background-position:0 0}
+        .paging_shop .btn_next{width:20px;margin-left:-1px;background-position:-19px 0}
+
+        .list_shopslot{overflow:hidden;position:relative;height:340px;padding:17px 14px 10px} /* 2019-12-19 수정 */
+        .list_shopslot li{float:left;width:100%;margin-bottom:8px}
+        .list_shopslot .link_thumb{overflow:hidden;float:left;position:relative;width:110px;height:60px;margin-right:11px} /* 2020-04-16 수정 */
+        .list_shopslot .frame_g{width:108px;height:58px}
+        .list_shopslot .num_shopslot{position:absolute;top:0;left:0;width:20px;height:20px;background-position:0 -120px}
+        .list_shopslot .num_shopslot2{background-position:0 -150px}
+        .list_shopslot .num_shopslot3{background-position:0 -180px}
+        .list_shopslot .num_shopslot4{background-position:0 -210px}
+        .list_shopslot .num_shopslot5{background-position:0 -240px} /* 2019-12-19 추가 */
+        .list_shopslot .item_cont{display:block;overflow:hidden;position:relative;line-height:16px;letter-spacing:-0.05em}/* 2019-03-26 수정 */
+        .os_mac .list_shopslot .item_cont{letter-spacing:0}/* 2019-03-26 추가 */
+        .list_shopslot .tit_item{display:block;padding-top:14px;font-weight:normal}
+        .list_shopslot .txt_category{display:inline-block;position:absolute;left:0;top:0;z-index:1;height:20px;padding:0 5px;font-size:11px;line-height:17px;color:#fff;background-color:rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#99000000',endColorstr='#99000000',GradientType=0)}
+        .os_mac .list_shopslot .txt_category{line-height:21px}
+        .list_shopslot .txt_price{display:block}
+        .list_shopslot .bg_dimmed{position:absolute;left:0;top:0;right:0;bottom:0;z-index:-1;height:18px;border:1px solid #000;opacity:0.06;filter:alpha(opacity=6)}
+
+        .list_theme{height:320px;padding:15px 14px 8px} /* 2019-12-19 수정 */
+        .list_theme li{margin-bottom:10px} /* 2019-12-19 추가 */
+        .list_theme .tit_item{margin-bottom:2px;padding-top:10px}
+        .list_theme .link_thumb{height:54px}
+        .list_theme .frame_g{height:52px}
+
+        /* 2019-03-21 추가 시작 */
+        .list_deal .tit_item{padding-top:12px}
+        .os_mac .list_deal .tit_item{padding-top:14px}
+        .list_deal .txt_price{padding-top:2px}
+        .badge_discount{position:absolute;left:0;top:0;width:35px;height:20px;font-size:0;background-color:rgba(232,73,61,0.8);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce8493d', endColorstr='#cce8493d',GradientType=1 );text-align:center}
+        .badge_discount .txt_badge{display:inline-block;color:#fff;font-family:tahoma,arial,sans-serif;font-weight:bold;vertical-align:top}
+        .badge_discount .num_discount{font-size:12px;line-height:18px;letter-spacing:0}
+        .badge_discount .txt_percent{font-size:9px;line-height:20px}
+        .os_mac .badge_discount .txt_badge{font-family:helvetica,arial,sans-serif;font-weight:normal}
+        .os_mac .badge_discount .num_discount{line-height:20px}
+        .os_mac .badge_discount .txt_percent{margin-top:1px;line-height:19px}
+        /* // 2019-03-21 추가 끝 */
+
+        .info_subject{overflow:hidden;position:relative;height:20px;margin-bottom:-6px;padding:10px 52px 0 14px;white-space:nowrap;text-overflow:ellipsis}
+        .info_subject .link_subject{color:#118eff}
+        .info_subject .tit_subject{font-weight:normal}
+        .info_subject .ico_shopslot{position:absolute;top:12px;right:14px;padding-right:8px;font-size:11px;line-height:15px;color:#888;background-position:100% 6px}
+        .os_mac .info_subject{margin-bottom:-8px;padding-top:12px}
+        .os_mac .info_subject .ico_shopslot{top:13px;background-position:100% 4px}
+
+        .recom_shopslot{overflow:hidden;width:268px;height:34px;margin:0 14px 14px;border:1px solid #ececec;line-height:40px}
+        .recom_shopslot .wrap_recom{width:299px}
+        .recom_shopslot .link_recom{float:left;width:89px;height:34px;border-right:1px solid #ececec;line-height:32px;color:#555;text-align:center}
+        .recom_shopslot .link_recom:hover{color:#118eff}
+        .recom_shopslot .link_recom:first-child{margin-right:-1px}
+        .os_mac .recom_shopslot .link_recom{line-height:35px}
+
+        /* 레티나 */
+        @media
+        only screen and (-webkit-min-device-pixel-ratio: 1.5),
+        only screen and (min-device-pixel-ratio: 1.5),
+        only screen and (min-resolution: 1.5dppx) {
+            .img_shop{background-image:url(//t1.daumcdn.net/daumtop_deco/images/top/2017/rtn/img_shop.png);-webkit-background-size:60px 100px;background-size:60px 100px}
+            .ico_shopslot{background-image:url(//t1.daumcdn.net/daumtop_deco/images/top/2017/rtn/ico_shop.png);-webkit-background-size:20px 100px;background-size:20px 100px}
+            .tit_shopslot{background-image:url(//t1.daumcdn.net/daumtop_deco/images/top/2017/rtn/tit_shop_200421.png);-webkit-background-size:130px 320px;background-size:130px 200px}/* 2019-03-21 수정 */ /* 2020-04-21 수정 */
+            .num_shopslot{background-image:url(//t1.daumcdn.net/daumtop_deco/images/top/2017/rtn/num_shop_191219.png);background-size:30px 260px} /* 2019-12-19 수정 */
+        }
+    </style>
+
+    <script type="text/javascript">
+        window.command = [];
+
+        window.contextPath = '/red-apigate/';
+    </script>
+
+    <script type="text/javascript" src="./tiara.min.js.다운로드"></script>
+</head>
+<body marginwidth="0" marginheight="0">
+    <div class="section_shopslot #shoppinghow">
+    <div id="pcDaumTopSlotWrap" data-tiara-setnum="2"><div class="info_head">
+        <h3 class="tit_shopslot tit_theme"><span class="ir_wa">인기상품 BEST100</span></h3>
+    </div>
+    
+    <div class="info_subject" data-tiara-layer="shopping_right best100 titlelink">
+        <a href="https://shoppinghow.kakao.com/siso/p/bestRank/A03" target="_blank" class="link_subject #title" data-tiara-action-name="바로가기 클릭">
+            <strong class="tit_subject">이거 써봤어? 뷰티 인기상품 BEST 100</strong>
+            <span class="ico_shopslot">바로가기</span>
+        </a>
+    </div>
+    
+    <ul class="list_shopslot list_theme " data-tiara-layer="shopping_right best100 content" id="listWrap"><li>
+        <a href="https://shoppinghow.kakao.com/siso/p/bestRank/A03" target="_blank" class="link_thumb #img" data-tiara-ordnum="1" data-tiara-action-name="컨텐츠 클릭" data-tiara-copy="크라이오 러버 위드 모이..." aria-hidden="true" tabindex="-1">
+            <img src="./saved_resource(24)" width="110" height="54" class="img_thumb" alt="크라이오 러버 위드 모이..." tabindex="-1">
+            <span class="frame_g"></span>
+                         <span class="screen_out">순위</span>
+            <span class="num_shopslot num_shopslot1">1</span>
+            
+            
+        </a>
+        <span class="item_cont #txt">
+			<strong class="tit_item"><a href="https://shoppinghow.kakao.com/siso/p/bestRank/A03" data-tiara-ordnum="1" data-tiara-action-name="컨텐츠 클릭" data-tiara-copy="크라이오 러버 위드 모이..." target="_blank" class="link_item">크라이오 러버 위드 모이...</a></strong>
+			<span class="txt_price">7,070원</span>
+		</span>
+    </li>
+    
+    <li>
+        <a href="https://shoppinghow.kakao.com/siso/p/bestRank/A03" target="_blank" class="link_thumb #img" data-tiara-ordnum="2" data-tiara-action-name="컨텐츠 클릭" data-tiara-copy="라르끄 [1+1] 라르끄 LARC..." aria-hidden="true" tabindex="-1">
+            <img src="./saved_resource(25)" width="110" height="54" class="img_thumb" alt="라르끄 [1+1] 라르끄 LARC..." tabindex="-1">
+            <span class="frame_g"></span>
+                         <span class="screen_out">순위</span>
+            <span class="num_shopslot num_shopslot2">2</span>
+            
+            
+        </a>
+        <span class="item_cont #txt">
+			<strong class="tit_item"><a href="https://shoppinghow.kakao.com/siso/p/bestRank/A03" data-tiara-ordnum="2" data-tiara-action-name="컨텐츠 클릭" data-tiara-copy="라르끄 [1+1] 라르끄 LARC..." target="_blank" class="link_item">라르끄 [1+1] 라르끄 LARC...</a></strong>
+			<span class="txt_price">9,558원</span>
+		</span>
+    </li>
+    
+    <li>
+        <a href="https://shoppinghow.kakao.com/siso/p/bestRank/A03" target="_blank" class="link_thumb #img" data-tiara-ordnum="3" data-tiara-action-name="컨텐츠 클릭" data-tiara-copy="랑벨 내츄럴 딥클렌징 오..." aria-hidden="true" tabindex="-1">
+            <img src="./saved_resource(26)" width="110" height="54" class="img_thumb" alt="랑벨 내츄럴 딥클렌징 오..." tabindex="-1">
+            <span class="frame_g"></span>
+                         <span class="screen_out">순위</span>
+            <span class="num_shopslot num_shopslot3">3</span>
+            
+            
+        </a>
+        <span class="item_cont #txt">
+			<strong class="tit_item"><a href="https://shoppinghow.kakao.com/siso/p/bestRank/A03" data-tiara-ordnum="3" data-tiara-action-name="컨텐츠 클릭" data-tiara-copy="랑벨 내츄럴 딥클렌징 오..." target="_blank" class="link_item">랑벨 내츄럴 딥클렌징 오...</a></strong>
+			<span class="txt_price">13,800원</span>
+		</span>
+    </li>
+    
+    <li>
+        <a href="https://shoppinghow.kakao.com/siso/p/bestRank/A03" target="_blank" class="link_thumb #img" data-tiara-ordnum="4" data-tiara-action-name="컨텐츠 클릭" data-tiara-copy="내추럴 딥 클렌징 오일 아..." aria-hidden="true" tabindex="-1">
+            <img src="./saved_resource(27)" width="110" height="54" class="img_thumb" alt="내추럴 딥 클렌징 오일 아..." tabindex="-1">
+            <span class="frame_g"></span>
+                         <span class="screen_out">순위</span>
+            <span class="num_shopslot num_shopslot4">4</span>
+            
+            
+        </a>
+        <span class="item_cont #txt">
+			<strong class="tit_item"><a href="https://shoppinghow.kakao.com/siso/p/bestRank/A03" data-tiara-ordnum="4" data-tiara-action-name="컨텐츠 클릭" data-tiara-copy="내추럴 딥 클렌징 오일 아..." target="_blank" class="link_item">내추럴 딥 클렌징 오일 아...</a></strong>
+			<span class="txt_price">15,100원</span>
+		</span>
+    </li>
+    
+    <li>
+        <a href="https://shoppinghow.kakao.com/siso/p/bestRank/A03" target="_blank" class="link_thumb #img" data-tiara-ordnum="5" data-tiara-action-name="컨텐츠 클릭" data-tiara-copy="아이보리 비누 113g x 20..." aria-hidden="true" tabindex="-1">
+            <img src="./saved_resource(28)" width="110" height="54" class="img_thumb" alt="아이보리 비누 113g x 20..." tabindex="-1">
+            <span class="frame_g"></span>
+                         <span class="screen_out">순위</span>
+            <span class="num_shopslot num_shopslot5">5</span>
+            
+            
+        </a>
+        <span class="item_cont #txt">
+			<strong class="tit_item"><a href="https://shoppinghow.kakao.com/siso/p/bestRank/A03" data-tiara-ordnum="5" data-tiara-action-name="컨텐츠 클릭" data-tiara-copy="아이보리 비누 113g x 20..." target="_blank" class="link_item">아이보리 비누 113g x 20...</a></strong>
+			<span class="txt_price">15,470원</span>
+		</span>
+    </li></ul>
+    <div class="recom_shopslot #shortcut" id="shotcutWrap"><strong class="screen_out">쇼핑 카테고리</strong>
+    <div class="wrap_recom" data-tiara-layer="shopping_right shortcut" data-tiara-action-name="숏컷 클릭">
+        
+        <a href="https://shoppinghow.kakao.com/top" target="_blank" class="link_recom #txt">쇼핑 홈</a>
+        
+        <a href="https://shoppinghow.kakao.com/siso/p/hotdeal/list/" target="_blank" class="link_recom #txt">핫딜</a>
+        
+        <a href="https://shoppinghow.kakao.com/event/detail/54535" target="_blank" class="link_recom #txt">가정의 달</a>
+        
+    </div></div></div>
+    <div class="paging_shop"><!-- 2017-02-10 수정 : paging_shopslot 클래스명 paging_shop 로 변경 -->
+        <div class="info_page">
+            <span class="screen_out">현재 탭</span><em class="num_index" id="nowPage">2</em>
+            <span class="txt_slash">/</span>
+            <span class="screen_out">전체 탭</span><span class="num_total" id="totalPage">6</span>
+        </div>
+        <button type="button" class="img_shop btn_page btn_prev" data-tiara-layer="shopping_right nextbtn" data-tiara-action-name="이전 탭 클릭" id="btnPrev"><span class="ir_wa">&lt; 이전 탭</span></button><!-- 2017-02-10 -->
+        <button type="button" class="img_shop btn_page btn_next" data-tiara-layer="shopping_right nextbtn" data-tiara-action-name="다음 탭 클릭" id="btnNext"><span class="ir_wa">&gt; 다음 탭</span></button><!-- 2017-02-10 -->
+    </div>
+</div>
+
+<script type="text/template" id="pcDaumTopSlotTemplate">
+    <div class="info_head">
+        <h3 class="tit_shopslot <%= cssObj.className %>"><span class="ir_wa"><%= cssObj.title %></span></h3>
+    </div>
+    <% if( !_.isEmpty(title) ) { %>
+    <div class="info_subject" data-tiara-layer="<%= cssObj.tiara_layer2 %> titlelink">
+        <a href="<%= title_url %>" target="_blank" class="link_subject #title" data-tiara-action-name="바로가기 클릭">
+            <strong class="tit_subject"><%= title %></strong>
+            <span class="ico_shopslot">바로가기</span>
+        </a>
+    </div>
+    <% } %>
+    <ul class="list_shopslot <% if(id.indexOf('theme') >= 0 || id.indexOf('sale') >= 0){print('list_theme ')} %>" data-tiara-layer="<%= cssObj.tiara_layer2 %> content" id="listWrap"></ul>
+    <div class="recom_shopslot #shortcut" id="shotcutWrap"></div>
+</script>
+
+
+<script type="text/template" id="listTemplate">
+    <% _.each(list, function(item, i) { %>
+    <li >
+        <a href="<%= item.link || item.landingurl %>" target="_blank" class="link_thumb #img" data-tiara-ordnum="<%= i+1 %>" data-tiara-action-name="컨텐츠 클릭" data-tiara-copy="<%= item.name %>" aria-hidden="true" tabindex="-1">
+            <img src="<%= item.image || item.banner %>" width="110" height="<%= height %>" class="img_thumb" alt="<%= item.name %>" tabindex="-1">
+            <span class="frame_g"></span>
+            <% if(height == 54){ %>             <span class="screen_out">순위</span>
+            <span class="num_shopslot num_shopslot<%=i+1%>"><%=i+1%></span>
+            <% } %>
+            <% if( !_.isEmpty(item.headline) ) { %>
+            <span class="txt_category">
+				<span class="bg_dimmed"></span>
+				<%= item.headline %>
+			</span>
+            <% } %>
+        </a>
+        <span class="item_cont #txt">
+			<strong class="tit_item"><a href="<%= item.link || item.landingurl %>"  data-tiara-ordnum="<%= i+1 %>" data-tiara-action-name="컨텐츠 클릭" data-tiara-copy="<%= item.name %>" target="_blank" class="link_item"><%= item.name %></a></strong>
+			<span class="txt_price"><%= item.text %></span>
+		</span>
+    </li>
+    <% }); %>
+</script>
+
+<script type="text/template" id="shotcutTemplate">
+    <strong class="screen_out">쇼핑 카테고리</strong>
+    <div class="wrap_recom" data-tiara-layer="shopping_right shortcut" data-tiara-action-name="숏컷 클릭">
+        <% _.each(contents, function(item, i){ %>
+        <a href="<%= item.landingurl %>" target="_blank" class="link_recom #txt"><%= item.name %></a>
+        <% }); %>
+    </div>
+</script>
+
+<script type="text/javascript">
+    var data;
+        </script>
+
+<!--[if lt IE 9]>
+<script type="text/javascript" src="//t1.daumcdn.net/cssjs/jquery/jquery-1.11.1.js"></script>
+<scirpt src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js"></scirpt>
+<![endif]-->
+
+
+<!--[if gte IE 9]><!-->
+<script type="text/javascript" src="./jquery-2.1.1.js.다운로드"></script>
+<!--<![endif]-->
+
+<script type="text/javascript" src="./jquery.lazyload.min.1439434697334.js.다운로드"></script>
+<script type="text/javascript" src="./gargoyle.ext.min.v1436428771347.js.다운로드"></script>
+
+        
+<script type="text/javascript" src="./planmall.min.v1599616424773.js.다운로드"></script>
+
+<script type="text/javascript">
+    if ('undefined' !== typeof window.TiaraTracker) {
+        TiaraTracker.getInstance()
+                .setSvcDomain('www.daum.net')
+                .setPage('default')
+                .setSection('HOME')
+                // .trackPage('우하단기획전')
+                // .track();
+    }
+</script>
+
+<script type="text/javascript">
+    (function ($, w$) {
+        var top = Backbone.Router.extend({
+            routes:{
+                "(start)":"withType"
+            },
+            withType:function(){
+                var view = new layoutView();
+                view.setModel(data);
+            }
+        });
+        new top();
+        if(navigator.userAgent.indexOf("Mac OS") >= 0){
+            $("html").addClass("os_mac")
+        }
+        if(navigator.userAgent.indexOf("Windows NT") >= 0){
+            $("html").addClass("os_windows")
+        }
+        Backbone.history.start();
+    })(jQuery, window);
+</script>
+
+
+
+</body></html>
