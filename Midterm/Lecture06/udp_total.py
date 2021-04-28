@@ -53,4 +53,4 @@ if __name__ == '__main__':
    sending_counts = args.count
    if args.role == 'c':
       mode[args.role](args.s, args.p)
-   else: mode[args.role]('', args.p)
+   else: mode[args.role]('', args.p)   
