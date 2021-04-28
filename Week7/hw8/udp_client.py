@@ -12,9 +12,14 @@ while True:
 
    if "receive" in user:
       s.send(user.encode())
-      print(s.recv(1024).decode())
 
+      l = s.recv(1024).decode()
+      text = ''
+      for x in l[1:]:
+         if x == "[" or x == "]" or x == "'" or x== ","  : continue
+         text += x
+      print(text)
    if "send" in user:
-      print(s.recv(1024).decode())
+     print(s.recv(1024).decode())
 
    # s.close()
