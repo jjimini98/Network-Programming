@@ -1,10 +1,5 @@
-Tue Apr 13 02:25:50 2021:  Device 1 :Temp=13,Humid=67,lilum=92
-Tue Apr 13 02:25:50 2021:  Device 1 :Temp=24,Humid=54,lilum=84
-Tue Apr 13 02:25:50 2021:  Device 1 :Temp=7,Humid=23,lilum=91
-Tue Apr 13 02:25:50 2021:  Device 1 :Temp=17,Humid=11,lilum=94
-Tue Apr 13 02:25:50 2021:  Device 1 :Temp=24,Humid=20,lilum=93
-Tue Apr 13 02:25:56 2021:  Device 2 :Heartbeat=132,Steps=4557,Cal=2860
-Tue Apr 13 02:25:56 2021:  Device 2 :Heartbeat=100,Steps=4231,Cal=2593
-Tue Apr 13 02:25:56 2021:  Device 2 :Heartbeat=71,Steps=3507,Cal=3819
-Tue Apr 13 02:25:56 2021:  Device 2 :Heartbeat=107,Steps=5440,Cal=2600
-Tue Apr 13 02:25:56 2021:  Device 2 :Heartbeat=76,Steps=5115,Cal=2257
+Wed Apr 21 04:10:13 2021:  Device 1 :Temp=11,Humid=49,lilum=119
+Wed Apr 21 04:10:13 2021:  Device 1 :Temp=21,Humid=74,lilum=103
+Wed Apr 21 04:10:13 2021:  Device 1 :Temp=30,Humid=100,lilum=109
+Wed Apr 21 04:10:13 2021:  Device 1 :Temp=36,Humid=21,lilum=122
+Wed Apr 21 04:10:13 2021:  Device 1 :Temp=14,Humid=44,lilum=105
