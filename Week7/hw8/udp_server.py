@@ -38,5 +38,4 @@ while True:
          del dic_msg[msg[1]][0]
          # print(dic_msg)
          break
-           
-# s.close()
+         
