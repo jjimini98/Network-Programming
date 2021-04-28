@@ -36,6 +36,6 @@ while True:
       else :
          s.sendto(str(dic_msg[msg[1][0]]).encode(),addr)
          del dic_msg[msg[1]][0]
-         # print(dic_msg)
+         print(dic_msg)
          break
          

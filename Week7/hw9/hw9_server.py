@@ -10,10 +10,10 @@ sock = socket(AF_INET, SOCK_DGRAM)
 sock.bind(('',port))
 print("listening....")
 
-reTx = 0
-
 
 while True:
+    reTx = 0
+
     sock.settimeout(None)
     data, addr = sock.recvfrom(BUFF_SIZE)
     if random.random() <= 0.5: continue
