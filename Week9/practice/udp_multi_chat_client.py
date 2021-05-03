@@ -7,7 +7,7 @@ def handler(sock):
       print(msg.decode())
    
 
-svr_addr = ('locahost', 2500)
+svr_addr = ('localhost', 2500)
 sock= socket(AF_INET, SOCK_DGRAM)
 
 my_id = input("ID를 입력하세요 : ")

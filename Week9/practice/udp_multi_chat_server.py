@@ -24,6 +24,6 @@ while True :
 
    for c in client:
       if c !=addr:
-         s.sendto(data, client)
+         s.sendto(data, c)
 
    
