@@ -7,12 +7,12 @@ client = []
 s = socket(AF_INET, SOCK_STREAM)
 s.bind(('', 2500))
 s.listen(10)
+conn, addr = s.accept()
 
 print("Server started")
 
-def recvTask(sock): 
-   while True : 
-      conn, addr = s.accept()
+def recvTask(s):
+   while True :
       data = conn.recv(1024)
       
       if 'quit' in data.decode():
@@ -31,8 +31,9 @@ def recvTask(sock):
       if c !=addr:
          conn.send(data)
 
-th1 = threading.Thread(target=recvTask, args=(sock,))
+th1 = threading.Thread(target=recvTask, args=(s,))
 th1.start()
+
 
 
 # from socket import *
