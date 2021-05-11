@@ -7,7 +7,7 @@ from socket import *
 import time
 import threading
 
-port = 3000
+port = 5555
 BUFFSIZE = 1024
 
 
@@ -20,13 +20,15 @@ sock= socket(AF_INET, SOCK_STREAM)
 sock.connect(('localhost',port))     
 
 my_id = input("ID를 입력하세요 : ")
-sock.send(('[' + my_id + ']').encode())
+print("완료!")
+sock.send(('[' + my_id + '] 입장').encode())
 
 
 while True:
-   msg = '[' + my_id + '] ' + input()
-   sock.send(msg.encode())
-
 
    th = threading.Thread(target=recv , args=(sock,))
    th.start()
+
+
+   msg = '[' + my_id + ']' + input()
+   sock.send(msg.encode())
