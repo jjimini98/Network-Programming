@@ -38,16 +38,7 @@ def Task(sock) :
       for client in clients:
          if client !=conn:
             client.send(data)
-
-
-
-
-
-         # elif client != addr:
-         #    sock.send(data)
-         #    print("done")
-
-
+            
       print(time.asctime() + str(addr) + ": " + data.decode())
 
 
