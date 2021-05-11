@@ -21,7 +21,7 @@ sock.connect(('localhost',port))
 
 my_id = input("ID를 입력하세요 : ")
 print("완료!")
-sock.send(('[' + my_id + '] 입장').encode())
+sock.send(('[' + my_id + ']').encode())
 
 
 while True:
