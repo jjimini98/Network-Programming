@@ -1,11 +1,12 @@
 from socket import *
 import select
+import time 
 
 #연결되는 소켓을 담을 리스트 
 s_list = []
 
 BUFFER = 1024
-PORT = 3000 
+PORT = 5555
 
 s_sock = socket()
 s_sock.bind(('', PORT))
@@ -14,27 +15,36 @@ s_sock.listen(10)
 s_list.append(s_sock)
 print(str(PORT) + " 에서 접속 대기중")
 
+
+#r_sock :  [<socket.socket fd=412, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 3000)>] 
+#읽기가 가능한 리스트의 목록 
+#s_sock :  <socket.socket fd=412, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 3000)>
+#처음 서버를 연결하면 생기는 소켓 
+
 while True: 
 
    r_sock , w_sock, e_sock = select.select(s_list, [], [])
    for s in r_sock:
-      print("r_sock is", r_sock)
-      print("s_sock is" , s_sock) 
+
       if s== s_sock:
          c_sock, addr = s_sock.accept()
-         print("c_sock is", c_sock)
          s_list.append(c_sock)
          print("Client {} connected".format(addr))
    
-      elif s != s_sock:      
+      elif s != s_sock:    
          data = s.recv(BUFFER)
-         if data.decode() == "quit" :
-            s.close()
+         if "quit" in data.decode() :
+            print(addr, 'exited')
             s_list.remove(s)
-            continue
+            s.close() 
+            break
          
-         print("send complete")
-         print("Received : ", data.decode())
-         if s != c_sock:
-            s.send(data)
+         if not data : break 
+         
+         else: 
+            for x in range(1, len(s_list)):
+               if s_list[x] != s :
+                  s_list[x].send(data)
 
+         print(time.asctime() + str(addr) + ": " + data.decode())
+     
