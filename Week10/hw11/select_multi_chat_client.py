@@ -15,6 +15,10 @@ def recv(sock):
    while True:
       msg = sock.recv(BUFFSIZE)
       print(msg.decode())
+      if msg.decode()=="quit":
+         sock.close()
+         break 
+         
 
 sock= socket(AF_INET, SOCK_STREAM)
 sock.connect(('localhost',port))     
@@ -32,3 +36,5 @@ while True:
 
    msg = '[' + my_id + ']' + input()
    sock.send(msg.encode())
+   if msg == "quit":
+      break 
