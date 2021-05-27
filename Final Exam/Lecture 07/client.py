@@ -1,9 +1,16 @@
-import socket
+from socket import *
 
-sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-addr = ('localhost', 9000)
-sock.connect(addr)
-msg = sock.recv(1024)
+PORT = 9000
+address = ("localhost", PORT )
+BUFSIZE = 1024
 
-print(msg.decode())
-sock.close()
+s = socket(AF_INET, SOCK_STREAM)
+s.connect(address)
+
+while True:
+   msg = input("Message to send : ")
+   s.send(msg.encode())
+   data = s.recv(BUFSIZE)
+   print("Received message : %s" %data.decode())
+
+s.close() 
