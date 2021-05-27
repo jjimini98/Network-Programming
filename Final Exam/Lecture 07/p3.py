@@ -13,6 +13,3 @@ while True:
    print("addr is " , addr[0])
    client.send(b"Hello "+ addr[0].encode())
    client.close() 
-
-
-import threading 
