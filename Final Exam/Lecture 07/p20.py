@@ -46,7 +46,7 @@ def recvTask(sock):
       print("받은 메세지 : ", data.decode())
 
 
-s = socket(AF_INET, SOCK_STREAM)
+s = socket(AF_INET, SOCK_STREAM) 
 s.bind(('',port))
 s.listen(2)
 conn , addr = s.accept()
@@ -56,3 +56,4 @@ th1.start()
 
 th2 = threading.Thread(target=recvTask, args=(conn,))
 th2.start() 
+
