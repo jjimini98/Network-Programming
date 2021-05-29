@@ -1,13 +1,16 @@
+# UDP로 다중채팅프로그램 만들기 server version 
+
 from socket import * 
 import time
 
 clients= []
-s = socket(AF_INET , SOCK_STREAM)
+s = socket(AF_INET , SOCK_DGRAM)
 s.bind(('', 2500))
 print("Server is Started")
 
 while True:
    data, addr = s.recvfrom(1024)
+
    if 'quit' in data.decode():
       if addr in clients:
          print(addr , "exited")
@@ -23,4 +26,4 @@ while True:
 
    for client in clients:
       if client != addr : 
-         s.sendto
+         s.sendto(data,client)
