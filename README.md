@@ -32,8 +32,8 @@ Network Programming Lecture
 3. Final Exam  (21.06.09 Wed)
 
 
-- [ ] Lecture 07 (Concurrency1)
-- [ ] Lecture 08 (Concurrency2)
-- [ ] Lecture 09 (HTTP1)
+- [x] Lecture 07 (Concurrency1)
+- [x] Lecture 08 (Concurrency2)
+- [x] Lecture 09 (HTTP1)
 - [ ] Lecture 10 (HTTP2)
 - [ ] Lecture 11 (SSH,SFTP) 
