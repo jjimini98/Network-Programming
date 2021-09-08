@@ -35,5 +35,5 @@ Network Programming Lecture
 - [x] Lecture 07 (Concurrency1)
 - [x] Lecture 08 (Concurrency2)
 - [x] Lecture 09 (HTTP1)
-- [ ] Lecture 10 (HTTP2)
-- [ ] Lecture 11 (SSH,SFTP) 
+- [x] Lecture 10 (HTTP2)
+- [x] Lecture 11 (SSH,SFTP) 
